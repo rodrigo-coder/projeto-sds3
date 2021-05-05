@@ -20,7 +20,7 @@ const BarChart = () => {
 
     return (
         <Chart
-            options={{ ...options, labels: mockData.labels }}
+            options={{...options,labels:mockData.labels}}
             series={mockData.series}
             type="donut"
             height="240"
