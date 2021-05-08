@@ -1,20 +1,12 @@
 import Chart from 'react-apexcharts';
-
-
 const BarChart = () => {
-
-
-
-
-
     const options = {
         plotOptions: {
-            bar: {
+            bar:{
                 horizontal: true,
             }
         },
     };
-
     const mockData = {
         labels: {
             categories: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
@@ -26,8 +18,6 @@ const BarChart = () => {
             }
         ]
     };
-
-
     return (
         <Chart
             options={{ ...options, xaxis: mockData.labels }}
@@ -36,9 +26,6 @@ const BarChart = () => {
             height="240"
 
         />
-
-
-
-    );
+     );
 }
 export default BarChart;
